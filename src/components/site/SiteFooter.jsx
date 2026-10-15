@@ -2,13 +2,15 @@ import { CONTACT } from "@/data/site";
 
 export default function SiteFooter() {
   return (
-    <footer data-testid="site-footer" className="border-t border-[#D4A53C]/25 bg-[#070605]">
+    // <footer data-testid="site-footer" className="border-t border-[#D4A53C]/25 bg-[#070605]">
+    <footer data-testid="site-footer" className="border-t border-[#D4A53C]/25 bg-[#EAE0C9]">
       <div className="mx-auto max-w-[1440px] px-6 py-16 lg:px-12">
         <div className="flex flex-col gap-10 md:flex-row md:items-start md:justify-between">
           <div>
             <h3 className="font-display text-2xl tracking-[0.08em] text-[var(--gold)]">MG Consultants</h3>
             <div data-testid="footer-description" className="mt-5 space-y-2 text-sm leading-relaxed text-[var(--ivory)]">
-              <p>Independent Real Estate Consultants | Delhi &amp; Gurgaon</p>
+              {/* <p>Independent Real Estate Consultants | Delhi &amp; Gurgaon</p> */}
+              <p>MG consultant is a Delhi and Gurgaon based Real Estate Channel Partners selling residential and commercial properties starting 2cr</p>
               <p>{CONTACT.office}</p>
               <p>
                 {/* <a href={CONTACT.phoneHref} data-testid="footer-phone-link" className="u-link">{CONTACT.phone}</a> */}

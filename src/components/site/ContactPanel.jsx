@@ -222,10 +222,11 @@ export default function ContactPanel() {
             data-testid="contact-form"
             onSubmit={onSubmit}
             aria-busy={busy}
-            className="mt-14 grid gap-5 rounded-[28px] border border-[#D4A53C]/25 bg-[#15120D]/70 p-6 shadow-2xl backdrop-blur-xl md:grid-cols-2 md:p-10"
+            // className="mt-14 grid gap-5 rounded-[28px] border border-[#D4A53C]/25 bg-[#15120D]/70 p-6 shadow-2xl backdrop-blur-xl md:grid-cols-2 md:p-10"
+            className="mt-14 grid gap-5 rounded-[28px] border border-[#D4A53C]/25 bg-[#FBF5E8]/75 p-6 shadow-xl backdrop-blur-xl md:grid-cols-2 md:p-10"
           >
             {/* Full name */}
-            <div className="md:col-span-2">
+            <div className="md:col-span-2 ">
               <label className="pill-field group">
                 <User
                   size={18}

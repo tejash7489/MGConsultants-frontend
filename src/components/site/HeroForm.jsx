@@ -116,8 +116,10 @@ export default function HeroForm() {
       data-testid="hero-enquiry-form"
       onSubmit={onSubmit}
       aria-busy={busy}
-      className="ml-auto w-full max-w-md rounded-[28px] border border-[#D4A53C]/30 bg-[#0A0907]/60 p-6 shadow-2xl backdrop-blur-xl md:p-8"
+      // className="ml-auto w-full max-w-md rounded-[28px] border border-[#D4A53C]/30 bg-[#0A0907]/60 p-6 shadow-2xl backdrop-blur-xl md:p-8"
+      className="ml-auto w-full max-w-md rounded-[28px] border border-[var(--gold)]/35 bg-[#FBF5E8]/60 p-6 shadow-xl backdrop-blur-3xl md:p-8"
     >
+      {/* <p className="text-xs uppercase tracking-[0.35em] text-[var(--gold)]"> */}
       <p className="text-xs uppercase tracking-[0.35em] text-[var(--gold)]">
         Enquire now
       </p>

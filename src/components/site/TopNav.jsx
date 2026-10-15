@@ -6,7 +6,8 @@ export default function TopNav({ active }) {
   const [open, setOpen] = useState(false);
   return (
     <>
-      <header className="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-[#0A0907]/85 backdrop-blur-md">
+      {/* <header className="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-[#0A0907]/85 backdrop-blur-md"> */}
+      <header className="fixed inset-x-0 top-0 z-50 border-b border-[#2C2014]/10 bg-[#FBF5E8]/40 backdrop-blur-3xl backdrop-saturate-150">
         <div className="mx-auto flex h-20 max-w-[1440px] items-center justify-between px-6 lg:h-24 lg:px-12">
           <a href="#home" data-testid="brand-logo" className="flex items-center gap-3">
             <img src="/images/logo-mark.png" alt="MG Consultants" className="h-11 w-auto md:h-12" />

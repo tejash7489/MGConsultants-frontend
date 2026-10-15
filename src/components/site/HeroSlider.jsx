@@ -28,7 +28,8 @@ export default function HeroSlider() {
           </div>
         ))}
       </div>
-      <div className="absolute inset-0 bg-gradient-to-t from-[#0A0907] via-[#0A0907]/45 to-[#0A0907]/25" />
+      <div className="absolute inset-0 bg-gradient-to-t from-[#F3EAD8] via-[#F3EAD8]/60 to-[#F3EAD8]/35" />
+      
 
       <div className="relative z-10 mx-auto grid min-h-[100svh] max-w-[1440px] items-end gap-12 px-6 pb-24 pt-32 md:pb-14 lg:h-full lg:min-h-0 lg:grid-cols-12 lg:px-12 lg:pb-16">
         <div className="lg:col-span-7">
@@ -46,12 +47,12 @@ export default function HeroSlider() {
           <h1 data-testid="hero-title" className="font-display text-[11vw] uppercase leading-[1] tracking-[0.06em] text-[var(--ivory)] sm:text-6xl xl:text-7xl">
             <span className="block overflow-hidden pb-[0.08em]">
               <motion.span className="block" initial={{ y: "110%" }} animate={{ y: 0 }} transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1], delay: 0.15 }}>
-                Beyond the
+                The One Midtown
               </motion.span>
             </span>
             <span className="block overflow-hidden pb-[0.08em]">
               <motion.span className="block text-[var(--gold)]" initial={{ y: "110%" }} animate={{ y: 0 }} transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1], delay: 0.3 }}>
-                horizon
+                Moti Nagar West Delhi
               </motion.span>
             </span>
           </h1>
@@ -65,7 +66,7 @@ export default function HeroSlider() {
             >
               {/* Ultra-luxury sea-view residences at Valeur, Worli. 3, 4 &amp; 5 BHK from ₹ 6.8 Cr*. */}
               {/* Luxury Residences Starting at ₹7 Cr* */}
-              Resale & Property Consultation for DLF One Midtown
+              A Premium Project by DLF
             </motion.p>
             <motion.div
               initial={{ opacity: 0, y: 20 }}

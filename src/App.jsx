@@ -21,6 +21,8 @@ import PrivacyPolicy from "./components/Pages/PrivacyPolicy";
 import TermsAndConditions from "./components/Pages/TermsAndConditions";
 import Disclaimer from "./components/Pages/Disclaimer";
 import Cookies from "./components/Pages/Cookies";
+import Properties from "./components/site/Properties"; 
+import DlfMangolias from "./components/Pages/DlfMangolias";
 
 
 class ErrorBoundary extends React.Component {
@@ -138,6 +140,9 @@ const Home = () => {
         <LuxuryHighlights />
         <Amenities />
         <Residences />
+
+        <Properties />
+
         <Location />
         <GalleryCarousel />
         <ContactPanel />
@@ -169,6 +174,7 @@ function App() {
           <Route path="/terms" element={<TermsAndConditions />} />
           <Route path="/disclaimer" element={<Disclaimer />} />
           <Route path="/cookie-policy" element={<Cookies />} />
+          <Route path="/dlf-mangoliyas" element={<DlfMangolias />} />
           <Route path="*" element={<Home />} />
         </Routes>
       </BrowserRouter>

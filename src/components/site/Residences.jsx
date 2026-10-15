@@ -194,7 +194,8 @@ export default function Residences() {
   return (
     <section
       id="residences"
-      className="relative overflow-hidden bg-[#0A0907] px-4 py-16 text-[var(--ivory)] sm:px-6 sm:py-20 lg:px-10 lg:py-24"
+      // className="relative overflow-hidden bg-[#0A0907] px-4 py-16 text-[var(--ivory)] sm:px-6 sm:py-20 lg:px-10 lg:py-24"
+      className="relative overflow-hidden px-4 py-16 text-[var(--ivory)] sm:px-6 sm:py-20 lg:px-10 lg:py-24"
     >
       {/* Subtle background glow */}
       <div
@@ -221,7 +222,8 @@ export default function Residences() {
         </div>
 
         {/* Single property card */}
-        <div className="overflow-hidden rounded-xl border border-[var(--gold)]/50 bg-[#0D0C09] shadow-[0_25px_80px_rgba(0,0,0,0.28)]">
+        {/* <div className="overflow-hidden rounded-xl border border-[var(--gold)]/50 bg-[#0D0C09] shadow-[0_25px_80px_rgba(0,0,0,0.28)]"> */}
+        <div className="overflow-hidden rounded-xl border border-[var(--gold)]/50 shadow-[0_25px_80px_rgba(0,0,0,0.28)]">
           <div className="grid lg:grid-cols-[0.95fr_1.05fr]">
             {/* Property image */}
             <div className="group relative min-h-[320px] overflow-hidden bg-[#17130E] sm:min-h-[440px] lg:min-h-[640px]">
@@ -235,6 +237,7 @@ export default function Residences() {
                 }}
               />
 
+              {/* <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-black/10" /> */}
               <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-black/10" />
 
               <div className="absolute bottom-0 left-0 right-0 p-6 sm:p-8">
@@ -280,7 +283,7 @@ export default function Residences() {
                 {PROPERTY_DETAILS.map(({ label, value, Icon }) => (
                   <div
                     key={label}
-                    className="group flex min-h-[94px] min-w-0 items-center gap-3 rounded-md border border-white/[0.10] bg-white/[0.015] p-4 transition-colors duration-300 hover:border-[var(--gold)]/45 hover:bg-white/[0.035] sm:gap-4"
+                    className="group flex min-h-[94px] min-w-0 items-center gap-3 rounded-md border border-black bg-white/[0.015] p-4 transition-colors duration-300 hover:border-[var(--gold)]/45 hover:bg-white/[0.035] sm:gap-4"
                   >
                     <div className="flex h-10 w-10 shrink-0 items-center justify-center text-[var(--gold)]">
                       <Icon

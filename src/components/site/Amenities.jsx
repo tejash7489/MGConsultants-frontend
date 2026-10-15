@@ -7,14 +7,29 @@ export default function Amenities() {
   const active = AMENITIES[tab];
   return (
     <section id="amenities" data-testid="amenities-section" className="section relative overflow-hidden">
-      {AMENITIES.map((a, i) => (
+      {/* {AMENITIES.map((a, i) => (
         <div
           key={a.label}
           className={`absolute inset-0 bg-cover bg-center transition-opacity duration-1000 ${i === tab ? "opacity-100" : "opacity-0"}`}
           style={{ backgroundImage: `url(${a.img})` }}
         />
+      ))} */}
+
+      {AMENITIES.map((a, i) => (
+        <div
+          key={a.label}
+          className={`absolute inset-0 bg-cover bg-center scale-105 blur-sm transition-opacity duration-1000 ${
+            i === tab ? "opacity-100" : "opacity-0"
+          }`}
+          style={{ backgroundImage: `url(${a.img})` }}
+        />
       ))}
-      <div className="absolute inset-0 bg-[#0A0907]/85" />
+
+      {/* Gradient overlay */}
+      <div className="absolute inset-0 bg-gradient-to-r from-[#0B1728]/80 via-[#0B1728]/70 to-transparent" />
+      
+      {/* <div className="absolute inset-0 bg-[#0A0907]/85" /> */}
+      <div className="absolute inset-0 bg-[#F3EAD8]/88" />
       <div className="relative z-10 mx-auto max-w-[1280px] px-6 lg:px-12">
         <Heading lines={["Infinite amenities.", "Lifestyle beyond measure."]} />
         <div className="mt-14 flex gap-8 overflow-x-auto border-b border-[#D4A53C]/25 md:gap-10">
@@ -39,7 +54,8 @@ export default function Amenities() {
                 <span className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full border border-[#D4A53C]/60 text-[var(--gold)]">
                   <Icon size={22} strokeWidth={1.5} />
                 </span>
-                <span className="text-lg text-[var(--ivory)]">{item.name}</span>
+                {/* <span className="text-lg text-[var(--ivory)]">{item.name}</span> */}
+                <span className="text-lg text-white">{item.name}</span>
               </div>
             );
           })}

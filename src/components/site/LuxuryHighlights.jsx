@@ -13,7 +13,8 @@ export default function LuxuryHighlights() {
               <Reveal key={h.title} delay={(i % 3) * 0.08}>
                 <div data-testid={`highlight-card-${i}`} className="group relative h-[340px] overflow-hidden">
                   <img alt={h.title} src={h.img} className="h-full w-full object-cover transition-transform duration-[1.4s] ease-out group-hover:scale-110" />
-                  <div className="absolute inset-0 bg-[#0A0907]/65 transition-colors duration-700 group-hover:bg-[#0A0907]/45" />
+                  {/* <div className="absolute inset-0 bg-[#0A0907]/65 transition-colors duration-700 group-hover:bg-[#0A0907]/45" /> */}
+                  <div className="absolute inset-0 bg-[#F3EAD8]/70 transition-colors duration-700 group-hover:bg-[#F3EAD8]/45" />
                   <div className="absolute inset-0 flex flex-col items-center justify-center px-8 text-center">
                     <span className="flex h-16 w-16 items-center justify-center rounded-full border border-[var(--gold)] text-[var(--gold)] transition-transform duration-500 group-hover:-translate-y-1">
                       <Icon size={26} strokeWidth={1.3} />
