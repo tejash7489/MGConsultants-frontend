@@ -89,7 +89,7 @@ export default function Location() {
                 referrerPolicy="no-referrer-when-downgrade"
                 className="map-frame h-full w-full"
               />
-              <span className="absolute bottom-6 left-6 bg-[#0A0907] px-4 py-2 text-[11px] uppercase tracking-[0.25em] text-[var(--gold)]">Valeur · Worli</span>
+              {/* <span className="absolute bottom-6 left-6 bg-[#0A0907] px-4 py-2 text-[11px] uppercase tracking-[0.25em] text-[var(--gold)]">Valeur · Worli</span> */}
             </div>
           </div>
         </Reveal>

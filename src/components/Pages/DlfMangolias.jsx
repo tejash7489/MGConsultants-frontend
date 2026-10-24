@@ -5,6 +5,7 @@ import { submitEnquiry } from "@/components/site/api";
 // import ContactPanel from "@/components/site/ContactPanel";
 import HeroForm from "../site/HeroForm";
 import SiteFooter from "../site/SiteFooter";
+import { Toaster } from "sonner";
 
 const highlights = [
   { icon: Building2, title: "An exclusive address", text: "A private residential setting in Sector 28, along Gurugram’s Golf Course Road." },
@@ -259,6 +260,13 @@ export default function DlfMagnolias() {
         </div>
       </footer> */}
       <SiteFooter />
+      <Toaster
+        position="top-center"
+        theme="dark"
+        toastOptions={{
+          style: { background: "#15120D", border: "1px solid rgba(212,165,60,0.4)", color: "#F4EDE4" },
+        }}
+      />
     </div>
   );
 }

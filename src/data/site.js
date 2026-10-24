@@ -190,8 +190,9 @@ export const CONTACT = {
   address: "Delhi / Gurgaon",
   phone: ["+91 9355666154" , "+91 7289003400" , "+91 9810980014"],
   phoneHref: ["tel:+9355666154" , "tel:+7289003400" , "tel:+919810980014"],
-  email: "maneetghai@gmail.com",
+  email: "Maneetghai.consultants@gmail.com",
   office: "Delhi / Gurugram",
   udyam: "UDYAM-DL-11-0168382",
-  mapEmbed: "https://maps.google.com/maps?q=Dr.%20Annie%20Besant%20Road%2C%20Worli%2C%20Mumbai%20400018&z=15&output=embed",
+  // mapEmbed: "https://maps.google.com/maps?q=Dr.%20Annie%20Besant%20Road%2C%20Worli%2C%20Mumbai%20400018&z=15&output=embed",
+  mapEmbed: "https://maps.google.com/maps?q=Gurugram,Haryana&output=embed",
 };
