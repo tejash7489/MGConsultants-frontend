@@ -129,8 +129,12 @@ import {
 import { toast } from "sonner";
 import { Heading, Reveal } from "./motion";
 import { submitEnquiry } from "./api";
+import { useNavigate } from "react-router-dom";
 
 export default function ContactPanel() {
+
+  const navigate = useNavigate();
+
   const [form, setForm] = useState({
     name: "",
     email: "",
@@ -185,6 +189,8 @@ export default function ContactPanel() {
       toast.success(
         "Thank you! We will be in touch with you shortly."
       );
+
+      navigate("/thank-you");
 
       setForm({
         name: "",
@@ -311,7 +317,7 @@ export default function ContactPanel() {
                 className={`mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-md border transition-colors ${
                   consent
                     ? "border-[var(--gold)] bg-[var(--gold)] text-[#0A0907]"
-                    : "border-white/30"
+                    : "border-[var(--gold)]"
                 }`}
               >
                 {consent && <Check size={14} strokeWidth={3} />}

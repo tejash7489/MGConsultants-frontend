@@ -23,6 +23,7 @@ import Disclaimer from "./components/Pages/Disclaimer";
 import Cookies from "./components/Pages/Cookies";
 import Properties from "./components/site/Properties"; 
 import DlfMangolias from "./components/Pages/DlfMangolias";
+import ThankYou from "./components/Pages/ThankYou";
 
 
 class ErrorBoundary extends React.Component {
@@ -176,6 +177,7 @@ function App() {
           <Route path="/cookie-policy" element={<Cookies />} />
           <Route path="/dlf-mangoliyas" element={<DlfMangolias />} />
           <Route path="*" element={<Home />} />
+          <Route path="/thank-you" element={<ThankYou />} />
         </Routes>
       </BrowserRouter>
     </ErrorBoundary>

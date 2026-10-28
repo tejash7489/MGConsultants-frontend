@@ -65,8 +65,12 @@ import { ArrowUpRight, LoaderCircle } from "lucide-react";
 import { toast } from "sonner";
 import { PillField } from "./PillField";
 import { submitEnquiry } from "./api";
+import { useNavigate } from "react-router-dom";
 
 export default function HeroForm() {
+
+  const navigate = useNavigate();
+
   const [form, setForm] = useState({
     name: "",
     phone: "",
@@ -97,6 +101,9 @@ export default function HeroForm() {
 
       toast.success("Thank you! Our team will call you back shortly.");
 
+      navigate("/thank-you");
+
+
       setForm({
         name: "",
         phone: "",
@@ -110,6 +117,8 @@ export default function HeroForm() {
       setBusy(false);
     }
   };
+
+
 
   return (
     <form
